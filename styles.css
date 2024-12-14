@@ -1,0 +1,251 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ecf0f1; /* Light gray */
+    color: #34495e; /* Dark slate gray */
+}
+
+header {
+    background: #2c3e50; /* Deep blue-gray */
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo and Navigation Styling */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Light teal */
+}
+/* Home Section Styling */
+#home{
+    background-image: url("wonde.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-container {
+    display: flex;
+    margin-top: 100px;
+    background-size: cover;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100vw;
+    gap: 20px; 
+    height: 80vh;
+    /* margin-top: 20px; */
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    border-radius: 20px; 
+    border: 3px solid #1c1e20; 
+}
+
+.home-info {
+    max-width: 600px; 
+}
+
+.home-info h1 {
+    margin-bottom: 10px;
+    font-size: 2rem; 
+    color: #0a74da;
+}
+
+.home-info p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* Section Styling */
+section {
+    padding: 20px 20px;
+    margin-top: 60px;
+    background: #ecf0f1;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2c3e50; /* Deep blue-gray */
+}
+
+section p,
+section ul {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #34495e;
+}
+section ul Label{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+section ul li {
+    margin-bottom: 10px;
+}
+/* About Section Styling */
+#about {
+    padding: 40px 0;
+}
+
+#about .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+#about h2 {
+    margin-left: -100px; /* Moves h2 40px from the left */
+    /* flex-basis: 100%; Ensures h2 spans full width before other elements */
+}
+
+#about p {
+    flex: 1; /* Allows the paragraph to occupy the remaining space */
+    text-align: left; /* Aligns text on the left */
+}
+.skills{
+    display: flex;
+}
+.skills h2{
+    margin-left: -100px;
+    margin-right: 100px;
+}
+.skills ul{
+    margin-left: 100px;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: #fff;
+    width: 450px;
+    height: 250px;
+    box-shadow: 0 2px 5px rgba(248, 254, 255, 0.911);
+}
+.skills ul li{
+    list-style: none;
+}
+/* Project Section */
+.project {
+    background: #fff;
+    margin: 20px 12px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    height: 400px;
+    text-align: center;
+}
+#projects h2{
+    margin-right: 100px;
+    margin-left: -100px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #2c3e50;
+}
+
+.project p {
+    color: #34495e;
+}
+.contact{
+    display: flex;
+}
+.contact p{
+    margin-left: 200px;
+}
+.contact h2{
+    margin-top: -15px;
+    margin-left: -100px;
+}
+.experience{
+    display: flex;
+}
+.experience h2{
+    margin-left: -100px;
+    margin-right: 100px;
+}
+.job{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 60px;
+}
+/* Footer Styling */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-left {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
